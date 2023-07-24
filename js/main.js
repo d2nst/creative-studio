@@ -57,7 +57,7 @@ gsap.from('.in', {
 });
 
 // s-content 이미지 scale효과
-let tl3 = gsap.fromTo('.imgscale', { scale: 1.4 }, { scale: 1, duration: 3 });
+let tl3 = gsap.fromTo('.imgscale', { scale: 1.3 }, { scale: 1, duration: 3 });
 ScrollTrigger.create({
   trigger: '.s-content',
   start: 'top 40%',
@@ -68,18 +68,12 @@ ScrollTrigger.create({
 
 // s-content 텍스트 올라가는 효과
 let tl5 = new TimelineMax({});
-tl5.staggerFrom(
-  '.hidden-text',
-  1.5,
-  { y: '100%', opacity: 0, ease: 'power4.easeOut' },
-  1
-);
+tl5.staggerFrom('.hidden-text', 1.5, { opacity: 0, ease: 'power4.easeOut' }, 1);
 
 ScrollTrigger.create({
   trigger: '.s-wrap',
   start: 'top center',
   opacity: 1,
-  markers: true,
   onEnter: function () {
     tl5.restart();
   },
@@ -89,10 +83,11 @@ ScrollTrigger.create({
 gsap.utils.toArray('.s-main__text').forEach((panel, i) => {
   ScrollTrigger.create({
     trigger: panel,
-    start: 'top center',
+    start: 'top 40%',
     end: 'bottom -100%',
     pin: true,
     pinSpacing: false,
+    markers: true,
   });
 });
 
@@ -101,6 +96,7 @@ gsap.from('.listitem', {
   y: 30,
   opacity: 0,
   stagger: 0.5,
+  scrub: 1,
   scrollTrigger: {
     trigger: '.s-image__list',
     start: 'top 70%',
@@ -108,3 +104,12 @@ gsap.from('.listitem', {
     ease: 'power2.inOut',
   },
 });
+
+// s-main__text h3 - span 내용 좌측 이미지 배열에 따라 변경
+const stickyLink = [
+  'Websites',
+  'Collateral',
+  'Strategy',
+  'Identity',
+  'Packaging',
+];
