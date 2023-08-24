@@ -12,6 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+
   <script defer src="./js/main.js"></script>
 
 </head>
@@ -73,7 +74,7 @@
     </div>
   </header>
   <!-- //header -->
-  <div class="nav__wrap">
+  <nav class="nav__wrap">
     <h1>
       <a href="">for<span class="ner">ner</span>
       </a>
@@ -84,7 +85,7 @@
         <span class="split-text">menu</span>
       </button>
     </div>
-  </div>
+  </nav>
   <!-- //nav -->
   <section class="f-content">
     <div class="f-top">
@@ -120,7 +121,11 @@
       <div class="s-main__text">
         <h2 class="hidden-text">We bring<br> brands to life</h2>
         <h3 class="hidden-text">through
-          <span class="cursive" id="stickyLink">Identity</span>
+          <div class="cursive up">Collateral</div>
+          <div class="cursive up">Strategy</div>
+          <div class="cursive up">Identity</div>
+          <div class="cursive up">Websites</div>
+          <div class="cursive up">Packaging</div>
         </h3>
       </div>
       <div class="s-image__list">
@@ -159,13 +164,211 @@
       </div>
     </div>
   </section>
+  <!-- //s-content -->
   <section class="t-content">
     <div class="t-wrap">
-      <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque reprehenderit voluptatibus illum, nisi
-        reiciendis non aliquam molestias ea distinctio possimus error similique, saepe quia earum necessitatibus dolor
-        voluptate recusandae itaque.</h3>
+      <ul class="t-contents">
+        <li class="t-slide" id="slide1">
+          <a href="javascript:void(0)" class="t-forner">
+            <div class="t-content__text">
+              <h2>soto</h2>
+              <sup class="cursive">1</sup>
+            </div>
+            <div class="t-content__img">
+              <picture>
+                <source srcset="./images/img13-mobile.jpg" media="(max-width: 767px)" />
+                <source srcset="./images/img13.jpg" media="(min-width: 768px)" />
+                <img src="./images/img13-original.jpg" alt="반응형 이미지" class="original__img" />
+              </picture>
+            </div>
+          </a>
+        </li>
+        <li class="t-slide" id="slide2">
+          <a href="javascript:void(0)" class="t-forner">
+            <div class="t-content__text">
+              <h2>soundmint</h2>
+              <sup class="cursive">2</sup>
+            </div>
+            <div class="t-content__img">
+              <picture>
+                <source srcset="./images/img14-mobile.jpg" media="(max-width: 767px)" />
+                <source srcset="./images/img13.jpg" media="(min-width: 768px)" />
+                <img src="./images/img14-original.jpg" alt="반응형 이미지" class="original__img" />
+              </picture>
+            </div>
+          </a>
+        </li>
+        <li class="t-slide" id="slide3">
+          <a href="javascript:void(0)" class="t-forner">
+            <div class="t-content__text">
+              <h2>CauseMedic</h2>
+              <sup class="cursive">3</sup>
+            </div>
+            <div class="t-content__img">
+              <picture>
+                <source srcset="./images/img16-mobile.jpg" media="(max-width: 767px)" />
+                <source srcset="./images/img16.jpg" media="(min-width: 768px)" />
+                <img src="./images/img16-original.jpg" alt="반응형 이미지" class="original__img" />
+              </picture>
+            </div>
+          </a>
+        </li>
+        <li class="t-slide" id="slide4">
+          <a href="javascript:void(0)" class="f-forner">
+            <div class="t-content__text">
+              <h2>Fig & Thistle</h2>
+              <sup class="cursive">4</sup>
+            </div>
+            <div class="t-content__img">
+              <picture>
+                <source srcset="./images/img18-mobile.jpg" media="(max-width: 767px)" />
+                <source srcset="./images/img18.jpg" media="(min-width: 768px)" />
+                <img src="./images/img18-original.jpg" alt="반응형 이미지" class="original__img" />
+              </picture>
+            </div>
+          </a>
+        </li>
+        <li class="t-slide" id="slide5">
+          <a href="javascript:void(0)" class="t-forner">
+            <div class="t-content__text">
+              <h2>Edge Of Ember</h2>
+              <sup class="cursive">5</sup>
+            </div>
+            <div class="t-content__img">
+              <picture>
+                <source srcset="./images/img19-mobile.jpg" media="(max-width: 767px)" />
+                <source srcset="./images/img19.jpg" media="(min-width: 768px)" />
+                <img src="./images/img19-original.jpg" alt="반응형 이미지" class="original__img" />
+              </picture>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
+  <!-- //t-content -->
+  <section class="fo-content">
+    <button class="f-btn">view all projects
+      <sup class="cursive">15</sup></button>
+    <div class="f-images">
+      <div class="img img-1">
+        <img src="./images/img1.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img11.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-2">
+        <img src="./images/img2.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img12.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-3">
+        <img src="./images/img3.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img13.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-4">
+        <img src="./images/img5.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img14.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-5">
+        <img src="./images/img6.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img15.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-6">
+        <img src="./images/img7.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img16.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-7">
+        <img src="./images/img8.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img17.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-8">
+        <img src="./images/img9.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img18.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-9">
+        <img src="./images/img10.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img7.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-10">
+        <img src="./images/img11.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img6.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-11">
+        <img src="./images/img12.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img5.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-12">
+        <img src="./images/img13.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img3.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-13">
+        <img src="./images/img14.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-14">
+        <img src="./images/img15.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img1.jpg" alt="" />
+        </div>
+      </div>
+      <div class="img img-15">
+        <img src="./images/img16.jpg" alt="" id="main-img" />
+        <div class="hovered-img">
+          <img src="./images/img19.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //fo-content -->
+  <section class="l-content">
+    <img src="./images/img20.jpg" class="imgscale" alt="" />
+    <div class="l-text">
+      <p class="text1">IF YOU HAVE A POTENTIAL PROJECT OR<br>
+        COLLABORATION THAT YOU'D LIKE<br>
+        TO DISCUSS,</p>
+      <p><em>
+          please,<br>
+          contact us
+        </em></p>
+      <address class="address">d2@portfolio.studio</address>
+    </div>
+  </section>
+  <!-- //l-content -->
+  <footer>
+    <div class="f-logo">
+      <a href="#">forner</a>
+    </div>
+    <ul class="sns">
+      <li><a href="#">behance</a></li>
+      <li><a href="#">instagram</a></li>
+      <li><a href="#">pinterest</a></li>
+    </ul>
+
+  </footer>
 </body>
 
 </html>
